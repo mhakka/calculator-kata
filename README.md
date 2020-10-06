@@ -9,14 +9,15 @@ Assurez-vous de tester seulement des entrées valides sauf mention contraire de 
 A vous de jouer !
 
 ## Etape 1
-Créer une calculatrice simple avec une méthode ayant pour signature :
+Créer une calculatrice simple avec une méthode ayant pour signature :  
 int ajouter(String numbers)
 
-Cette méthode peut prendre jusqu’à 2 nombres, séparé par une virgule, et retournera leur somme.
-Par exemple : « », « 1 » ou « 1,2 » en entrée
-Pour une chaine vide, le résultat sera 0.
-Pour la chaine « 1 », le résultat sera 1.
-Pour la chaine « 1,2 », le résultat sera 3.
+Cette méthode peut prendre jusqu’à 2 nombres, séparé par une virgule, et retournera leur somme.  
+Par exemple : « », « 1 » ou « 1,2 » en entrée  
+Pour une chaine vide, le résultat sera 0.  
+Pour la chaine « 1 », le résultat sera 1.  
+Pour la chaine « 1,2 », le résultat sera 3.  
+
 Astuces :
 -	Démarrer avec le cas de test le plus simple d’une chaine vide puis passer au cas avec 1 puis 2 nombres
 -	Se rappeler de résoudre les cas aussi simplement que possible afin de vous forcer à écrire des tests auquels vous n’auriez pas pensé
@@ -44,7 +45,7 @@ Supporter différents séparateurs
 
 ### Etape 4.1 
 Pour changer le séparateur, le début de la chaine contiendra une ligne séparée qui ressemble à celle-ci :  
-« //[separateur]\n[nombres…] » 
+« //[separateur]\n[nombres…] »  
 Par exemple « //;\n1;2 » devrait retourner 3 avec le séparateur ‘;’
 ### Etape 4.2
 La première ligne est optionnelle. Tous les scénarios existants doivent être supportés
