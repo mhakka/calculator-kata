@@ -13,10 +13,10 @@ Créer une calculatrice simple avec une méthode ayant pour signature :
 int ajouter(String numbers)
 
 Cette méthode peut prendre jusqu’à 2 nombres, séparé par une virgule, et retournera leur somme.  
-Par exemple : « », « 1 » ou « 1,2 » en entrée  
+Par exemple : "", "1" ou "1,2" en entrée  
 Pour une chaine vide, le résultat sera 0.  
-Pour la chaine « 1 », le résultat sera 1.  
-Pour la chaine « 1,2 », le résultat sera 3.  
+Pour la chaine "1", le résultat sera 1.  
+Pour la chaine "1,2", le résultat sera 3.  
 
 Astuces :
 -	Démarrer avec le cas de test le plus simple d’une chaine vide puis passer au cas avec 1 puis 2 nombres
@@ -33,8 +33,8 @@ Modifier la méthode « ajouter » afin de gérer un nombre inconnu de nombres d
 
 ## Etape 3
 Modifier la méthode « ajouter » afin de gérer un retour chariot entre chaque nombre à la place de la virgule
-- l’entrée suivante est valide : « 1\n2,3 »
-- l’entrée suivante n’est pas valide : « 1,\n »
+- l’entrée suivante est valide : "1\n2,3" == 6
+- l’entrée suivante n’est pas valide alors ne vous attendez pas à cela : "1,\n" (pas besoin d'écrire un test pour ce cas) 
 
 
 
@@ -43,17 +43,16 @@ Modifier la méthode « ajouter » afin de gérer un retour chariot entre chaque
 ## Etape 4
 Supporter différents séparateurs
 
-### Etape 4.1 
-Pour changer le séparateur, le début de la chaine contiendra une ligne séparée qui ressemble à celle-ci :  
-« //[separateur]\n[nombres…] »  
-Par exemple « //;\n1;2 » devrait retourner 3 avec le séparateur ‘;’
-### Etape 4.2
-La première ligne est optionnelle. Tous les scénarios existants doivent être supportés
+- Pour changer le séparateur, le début de la chaine contiendra une ligne séparée qui ressemble à celle-ci :  
+"//[separateur]\n[nombres…]"  
+Par exemple "//;\n1;2" devrait retourner 3 avec le séparateur ‘;’
+
+- La première ligne est optionnelle. Tous les scénarios existants doivent être supportés
 
 
 
 ## Etape 5
-Appeler la méthode avec un nombre négatif doit émettre une exception « les nombres négatifs ne sont pas autorisés » et le nombre négatif qui a été passé.  
+Appeler la méthode avec un nombre négatif doit émettre une exception « les nombres négatifs ne sont pas autorisés » ainsi que le nombre négatif qui a été passé.  
 S’il y a plusieurs nombres négatifs, le message de l’exception doit tous les afficher
 
 
@@ -65,14 +64,14 @@ Les nombres plus grand que 1000 doivent être ignorés, donc ajouter 2 + 1001 = 
 
 
 ## Etape 7
-Les séparateurs peuvent être de n’importe quel taille avec le format suivant : « //[separateur]\n ».  
-Par exemple : « //[***]\n1***2***3 » doit retourner 6
+Les séparateurs peuvent être de n’importe quel taille avec le format suivant : "//[separateur]\n".  
+Par exemple : "//[\*\*\*]\n1\*\*\*2\*\*\*3" doit retourner 6
 
 
 
 ## Etape 8
-Autoriser les séparateurs multiples comme suit : « //[separateur1][separateur2] ».  
-Par exemple : « //[*][%]\n1*2%3 » doit retourner 6
+Autoriser les séparateurs multiples comme suit : "//[separateur1][separateur2]".  
+Par exemple : "//[\*][%]\n1\*2%3" doit retourner 6
 
 
 
