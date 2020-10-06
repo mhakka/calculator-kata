@@ -12,11 +12,12 @@ A vous de jouer !
 Créer une calculatrice simple avec une méthode ayant pour signature :  
 int ajouter(String numbers)
 
-Cette méthode peut prendre jusqu’à 2 nombres, séparé par une virgule, et retournera leur somme.  
-Par exemple : "", "1" ou "1,2" en entrée  
-Pour une chaine vide, le résultat sera 0.  
-Pour la chaine "1", le résultat sera 1.  
-Pour la chaine "1,2", le résultat sera 3.  
+Cette méthode peut prendre jusqu’à 2 nombres, séparés par une virgule, et retournera leur somme.  
+(pour une chaine vide elle retournera 0)  
+Par exemple :  
+Pour "" elle retournera 0  
+Pour "1" elle retournera 1  
+Pour "1,2" elle retournera 3  
 
 Astuces :
 -	Démarrer avec le cas de test le plus simple d’une chaine vide puis passer au cas avec 1 puis 2 nombres
@@ -33,7 +34,7 @@ Modifier la méthode « ajouter » afin de gérer un nombre inconnu de nombres d
 
 ## Etape 3
 Modifier la méthode « ajouter » afin de gérer un retour chariot entre chaque nombre à la place de la virgule
-- l’entrée suivante est valide : "1\n2,3" == 6
+- l’entrée suivante est valide : "1\n2,3" (retournera 6)
 - l’entrée suivante n’est pas valide alors ne vous attendez pas à cela : "1,\n" (pas besoin d'écrire un test pour ce cas) 
 
 
