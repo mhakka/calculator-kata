@@ -76,4 +76,25 @@ public class StringCalculatorTest {
     public void should_return_17_if_string_is_1newLine2comma10newLine4 () {
         assertEquals(17, stringCalculator.add("1\n2,10\n4"));
     }
+
+    //Etape 4
+    @Test
+    public void should_return_3_if_separator_is_semicolon_and_2nd_ligne_is_1semicolon2 () {
+        assertEquals(3, stringCalculator.add("//;\n1;2"));
+    }
+
+    @Test
+    public void should_return_3_if_separator_is_point_and_2nd_ligne_is_1point2 () {
+        assertEquals(3, stringCalculator.add("//.\n1.2"));
+    }
+
+    @Test
+    public void should_return_8_if_separator_is_point_and_2nd_ligne_is_3point5 () {
+        assertEquals(8, stringCalculator.add("//.\n3.5"));
+    }
+
+    @Test
+    public void should_return_14_if_separator_is_pourcent_and_2nd_ligne_is_3pourcent5pourcent6 () {
+        assertEquals(14, stringCalculator.add("//%\n3%5%6"));
+    }
 }
