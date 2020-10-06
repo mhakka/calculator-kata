@@ -55,4 +55,14 @@ public class StringCalculatorTest {
         assertEquals(110, stringCalculator.add("35,75"));
     }
 
+    //Etape 2
+    @Test
+    public void should_return_6_if_string_is_1comma2comma3 () {
+        assertEquals(6, stringCalculator.add("1,2,3"));
+    }
+
+    @Test
+    public void should_return_17_if_string_is_1comma2comma10comma4 () {
+        assertEquals(17, stringCalculator.add("1,2,10,4"));
+    }
 }
