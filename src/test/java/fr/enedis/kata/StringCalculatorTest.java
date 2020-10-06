@@ -65,4 +65,15 @@ public class StringCalculatorTest {
     public void should_return_17_if_string_is_1comma2comma10comma4 () {
         assertEquals(17, stringCalculator.add("1,2,10,4"));
     }
+
+    //Etape 3
+    @Test
+    public void should_return_6_if_string_is_1newLine2comma3 () {
+        assertEquals(6, stringCalculator.add("1\n2,3"));
+    }
+
+    @Test
+    public void should_return_17_if_string_is_1newLine2comma10newLine4 () {
+        assertEquals(17, stringCalculator.add("1\n2,10\n4"));
+    }
 }
