@@ -43,4 +43,17 @@ public class StringCalculatorTest {
         //then
         Assert.assertEquals(3,res);
     }
+
+
+    @Test
+    public void whenStringHasReturnChariot(){
+
+        //given
+        StringCalculator stringCalculator = new StringCalculator();
+
+        //when
+        int res = stringCalculator.add("1/n,2,3");
+        //then
+        Assert.assertEquals(6,res);
+    }
 }
