@@ -19,4 +19,16 @@ public class StringCalculatorTest {
         //then
         Assert.assertEquals(0,res);
     }
+
+    @Test
+    public void whenStringIsEqualsOne(){
+
+        //given
+        StringCalculator stringCalculator = new StringCalculator();
+
+        //when
+        int res = stringCalculator.add("1");
+        //then
+        Assert.assertEquals(1,res);
+    }
 }
