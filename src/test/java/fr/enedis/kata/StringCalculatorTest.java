@@ -31,4 +31,16 @@ public class StringCalculatorTest {
         //then
         Assert.assertEquals(1,res);
     }
+
+    @Test
+    public void whenStringIsEqualsOnePointTwo(){
+
+        //given
+        StringCalculator stringCalculator = new StringCalculator();
+
+        //when
+        int res = stringCalculator.add("1.2");
+        //then
+        Assert.assertEquals(3,res);
+    }
 }
