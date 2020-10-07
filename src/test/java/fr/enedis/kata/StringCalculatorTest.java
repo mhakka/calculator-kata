@@ -16,13 +16,14 @@ public class StringCalculatorTest {
     //when
     int ajoutVide = StringCalculator.ajouter("");
     int ajoutOne = StringCalculator.ajouter("1");
-    int ajoutTow = StringCalculator.ajouter("1,2");
+    int ajoutAny = StringCalculator.ajouter("1,2,3,4");
 
     //then
 
     assertEquals(0, ajoutVide);
     assertEquals(1, ajoutOne);
-    assertEquals(3, ajoutTow);
+    //assertEquals(3, ajoutTow);
+    assertEquals(10, ajoutAny);
 
 
 }

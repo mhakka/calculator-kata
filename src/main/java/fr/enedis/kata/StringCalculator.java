@@ -10,7 +10,11 @@ public class StringCalculator {
                 return Integer.parseInt(s);
             }else{
                 String[] result = s.split(",");
-                return (Integer.parseInt(result[0]) + Integer.parseInt(result[1]));
+                int somme = 0 ;
+                for(int i = 0 ; i < result.length; i++){
+                    somme = somme + Integer.parseInt(result[i]);
+                }
+                return somme;
             }
         }
 
