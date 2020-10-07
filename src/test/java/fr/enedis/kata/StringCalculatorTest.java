@@ -11,12 +11,15 @@ public class StringCalculatorTest {
     //given
     String vide = "";
     String one = "1";
-    String tow = "1,2";
+    String any = "1,2,3,4";
+    String chariot = "1\n2,3";
+
 
     //when
-    int ajoutVide = StringCalculator.ajouter("");
-    int ajoutOne = StringCalculator.ajouter("1");
-    int ajoutAny = StringCalculator.ajouter("1,2,3,4");
+    int ajoutVide = StringCalculator.ajouter(vide);
+    int ajoutOne = StringCalculator.ajouter(one);
+    int ajoutAny = StringCalculator.ajouter(any);
+    int ajoutChariot = StringCalculator.ajouter(chariot);
 
     //then
 
@@ -24,6 +27,7 @@ public class StringCalculatorTest {
     assertEquals(1, ajoutOne);
     //assertEquals(3, ajoutTow);
     assertEquals(10, ajoutAny);
+    assertEquals(6, ajoutChariot);
 
 
 }
