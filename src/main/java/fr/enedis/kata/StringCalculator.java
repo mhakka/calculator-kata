@@ -2,6 +2,10 @@ package fr.enedis.kata;
 
 public class StringCalculator {
 
+    /*
+    add metthos
+    
+     */
     public int add(String numbers) {
         if("".equals(numbers)) {
             return 0;
